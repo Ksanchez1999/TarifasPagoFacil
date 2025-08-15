@@ -1,0 +1,326 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+
+body{
+  overflow: hidden;
+}
+
+
+main{
+  background: #470533;
+}
+
+
+
+main > #containerPage1{
+  background: #470533;
+  display: flex;
+  padding: 30px;
+  height: 100vh;
+  gap: 150px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+#containerPage1 > :nth-child(1),
+#containerPage1 > :nth-child(2)
+{
+  position: relative;
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+}
+
+
+
+#containerPage1 > :nth-child(1) > h2,
+#containerPage1 > :nth-child(2) > h2
+{
+  position: absolute;
+  top: -50px;
+  color: #fff;
+  font-size: 35px;
+}
+
+
+
+button{
+  display: inline-block;
+  width: 45%;
+  padding: 10px 20px;
+  font-size: 17px;
+  border-radius: 50px;
+  border: none;
+  background: transparent;
+  color: #fff;
+  border: 3px solid #fff;
+}
+
+
+
+
+button:hover{
+  cursor: pointer;
+  border: 3px solid #00d0ff;
+  color: #00d0ff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#containerPage2{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  transition: all 1s ease;
+}
+
+
+#containerPage2 > span{
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  font-size: 30px;
+}
+
+
+#containerPage2 > h1{
+  position: fixed;
+  top: 30px;
+  font-size: 40px;
+}
+
+
+
+#containerPage2 > div{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+
+#containerPage2 > div > div > h2{
+  margin-top: 30px;
+  border-bottom: 1px solid #fff;
+}
+
+
+#containerPage2 > div > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+#containerPage2 > div > div > h3{
+  font-size: 22px;
+  margin-top: 15px;
+
+}
+
+
+
+#containerPage2 > div > div > span{
+  font-size: 25px;
+}
+
+#containerPage2 > div > div > span:hover{
+  cursor: pointer;
+  color: #00d0ff;
+}
+
+
+
+
+
+
+
+
+
+#containerPage2 > #alertCopy{
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  font-size: 23px;
+
+}
+
+
+
+
+
+#containerPage2 #buttonBack{
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  top: auto;
+  right: auto;
+  font-size: 60px;
+}
+
+
+#buttonBack:hover{
+  cursor: pointer;
+  color: #00d0ff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#containerPage2 > #arrowContainerPromotionForMoreMonths{
+  position: fixed;
+  bottom: 15px;
+  top: auto;
+  right: 15px;
+  font-size: 40px;
+}
+
+
+
+#containerPage2 > #arrowContainerPromotionForMoreMonths:hover{
+  cursor: pointer;
+  color: #00d0ff;
+}
+
+
+
+
+#arrowUpContainerPromotionForMoreMonths{
+  position: fixed;
+  bottom: auto;
+  top: 15px;
+  right: 15px;
+  font-size: 40px;
+}
+
+#arrowUpContainerPromotionForMoreMonths:hover{
+  cursor: pointer;
+  color: #00d0ff;
+}
+
+
+
+
+
+
+#containerPage2 > #containerPromotionForMoreMonths{
+  transform: translateY(100vh);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+
+
+
+#containerPage2 > #containerPromotionForMoreMonths > :nth-child(2){
+  border-bottom: 3px solid #fff;
+}
+
+
+#containerPage2 > #containerPromotionForMoreMonths > div {
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+#containerPage2 > #containerPromotionForMoreMonths > div > div{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: 20px;
+}
+
+
+
+#containerPage2 > #containerPromotionForMoreMonths > div > div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justifify-content: center;
+  gap: 40px;
+}
+
+
+
+#containerPage2 > #containerPromotionForMoreMonths > div > div > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justifify-content: center;
+}
+
+
+
+#containerPage2 > #containerPromotionForMoreMonths > div > div > h2{
+  font-size: 27px;
+}
+
+
+
+#containerPage2 > #containerPromotionForMoreMonths > div > div > div > span{
+  font-size: 22px;
+}
+
+
+#containerPage2 > #containerPromotionForMoreMonths > div > div > div > span:hover{
+  cursor: pointer;
+  color: #00d0ff;
+}
+
+
+
+
