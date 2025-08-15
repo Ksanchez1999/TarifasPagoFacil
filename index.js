@@ -1,6 +1,6 @@
 ﻿// _____________________________________GENERAL VARIABLES_____________________________________
 
-let BcvPrice = null;
+let BcvPrice = 135.63;
 let elementsToCopy = "";
 
 
@@ -488,11 +488,11 @@ containerButtonsAccounts.appendChild(titleContainerButtonsAccounts);
 // ______________________FUNCTIONS______________________
 
 async function calcBs(priceBcvForClient) {
-  try {
-    const response = await fetch('https://ve.dolarapi.com/v1/dolares/oficial');
-    if (!response.ok) throw new Error('Error en la API');
-    const data = await response.json();
-    BcvPrice = data.promedio;
+//  try {
+//    const response = await fetch('https://ve.dolarapi.com/v1/dolares/oficial');
+//    if (!response.ok) throw new Error('Error en la API');
+//    const data = await response.json();
+//    BcvPrice = data.promedio;
 
     const bs = priceBcvForClient * BcvPrice;
 
@@ -894,5 +894,6 @@ async function createDinamicHtmlPage2(object) {
   const containerBcv = document.createElement("span");
   containerBcv.textContent = `Tasa BCV | Bs. ${BcvPrice}`;
   containerPage2.appendChild(containerBcv);
+
 
 }
