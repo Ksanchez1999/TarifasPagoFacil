@@ -498,10 +498,10 @@ async function calcBs(priceBcvForClient) {
 
     BcvPrice = BcvPrice.toFixed(2);
     return bs;
-  } catch (error) {
+/*   } catch (error) {
     console.error('Error al obtener la tasa BCV:', error);
     return null;
-  }
+  }*/
 }
 
 
@@ -897,3 +897,4 @@ async function createDinamicHtmlPage2(object) {
 
 
 }
+
