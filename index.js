@@ -1,6 +1,6 @@
 ﻿// _____________________________________GENERAL VARIABLES_____________________________________
 
-let BcvPrice = 135.63;
+let BcvPrice = 136.89;
 let elementsToCopy = "";
 
 
@@ -897,5 +897,6 @@ async function createDinamicHtmlPage2(object) {
 
 
 }
+
 
 
