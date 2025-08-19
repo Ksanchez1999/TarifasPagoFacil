@@ -1,6 +1,6 @@
 ﻿// _____________________________________GENERAL VARIABLES_____________________________________
 
-let BcvPrice = 136.89;
+let BcvPrice = null;
 let elementsToCopy = "";
 
 
@@ -488,20 +488,20 @@ containerButtonsAccounts.appendChild(titleContainerButtonsAccounts);
 // ______________________FUNCTIONS______________________
 
 async function calcBs(priceBcvForClient) {
-//  try {
-//    const response = await fetch('https://ve.dolarapi.com/v1/dolares/oficial');
-//    if (!response.ok) throw new Error('Error en la API');
-//    const data = await response.json();
-//    BcvPrice = data.promedio;
+  try {
+    const response = await fetch('https://ve.dolarapi.com/v1/dolares/oficial');
+    if (!response.ok) throw new Error('Error en la API');
+    const data = await response.json();
+    BcvPrice = data.promedio;
 
     const bs = priceBcvForClient * BcvPrice;
 
-//    BcvPrice = BcvPrice.toFixed(2);
+    BcvPrice = BcvPrice.toFixed(2);
     return bs;
-/*   } catch (error) {
+  } catch (error) {
     console.error('Error al obtener la tasa BCV:', error);
     return null;
-  }*/
+  }
 }
 
 
@@ -700,6 +700,11 @@ async function createDinamicHtmlPage2(object) {
     arrowContainerPromotionForMoreMonths.id = "arrowContainerPromotionForMoreMonths";
     containerPage2.appendChild(arrowContainerPromotionForMoreMonths);
 
+    const arrowDownContainerPromotionForMoreMonthsResponsive = document.createElement("span");
+    arrowDownContainerPromotionForMoreMonthsResponsive.textContent = "↓"
+    arrowDownContainerPromotionForMoreMonthsResponsive.id = "arrowDownContainerPromotionForMoreMonthsResponsive";
+    containerPage2.appendChild(arrowDownContainerPromotionForMoreMonthsResponsive);
+
     
     arrowContainerPromotionForMoreMonths.addEventListener("click", () => {
 
@@ -838,8 +843,8 @@ async function createDinamicHtmlPage2(object) {
 
       }
 
-       createHtmlPromotionForMoreMonthsClienteAndReseller("CLIENTE ➡", "client");
-       createHtmlPromotionForMoreMonthsClienteAndReseller("REVENDEDOR ➡", "reseller");
+       createHtmlPromotionForMoreMonthsClienteAndReseller("CLIENTE", "client");
+       createHtmlPromotionForMoreMonthsClienteAndReseller("REVENDEDOR", "reseller");
 
     }
 
@@ -895,8 +900,4 @@ async function createDinamicHtmlPage2(object) {
   containerBcv.textContent = `Tasa BCV | Bs. ${BcvPrice}`;
   containerPage2.appendChild(containerBcv);
 
-
 }
-
-
-

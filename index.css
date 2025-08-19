@@ -1,3 +1,5 @@
+/* ______________________ALL STYLES______________________ */
+
 *{
   margin: 0;
   padding: 0;
@@ -8,6 +10,7 @@
 
 body{
   overflow: hidden;
+  background: #470533;
 }
 
 
@@ -16,6 +19,7 @@ main{
 }
 
 
+/* ______________________CONTAINER PAGE 1______________________ */
 
 main > #containerPage1{
   background: #470533;
@@ -89,15 +93,11 @@ button:hover{
 
 
 
-
-
-
-
-
+/* ______________________CONTAINER PAGE 2______________________ */
 
 #containerPage2{
-  width: 100vw;
   height: 100vh;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -168,11 +168,7 @@ button:hover{
 
 
 
-
-
-
-
-
+/* ______________________ALERT COPY______________________ */
 
 #containerPage2 > #alertCopy{
   position: fixed;
@@ -184,6 +180,8 @@ button:hover{
 
 
 
+
+/* ______________________BUTTON BACK______________________ */
 
 
 #containerPage2 #buttonBack{
@@ -210,10 +208,7 @@ button:hover{
 
 
 
-
-
-
-
+/* ______________________ARROW CONTAINER PROMOTIONS FOR MORE MONTHS______________________ */
 
 #containerPage2 > #arrowContainerPromotionForMoreMonths{
   position: fixed;
@@ -241,6 +236,8 @@ button:hover{
   font-size: 40px;
 }
 
+
+
 #arrowUpContainerPromotionForMoreMonths:hover{
   cursor: pointer;
   color: #00d0ff;
@@ -249,7 +246,14 @@ button:hover{
 
 
 
+/* ______________________ARROW CONTAINER PROMOTIONS FOR MORE MONTHS -- RESPONSIVE______________________ */
 
+#arrowDownContainerPromotionForMoreMonthsResponsive{
+  display: none;
+}
+
+
+/* ______________________CONTAINER PROMOTIONS FOR MORE MONTHS______________________ */
 
 #containerPage2 > #containerPromotionForMoreMonths{
   transform: translateY(100vh);
@@ -290,7 +294,7 @@ button:hover{
   display: flex;
   flex-direction: row;
   align-items: center;
-  justifify-content: center;
+  justify-content: center;
   gap: 40px;
 }
 
@@ -300,7 +304,7 @@ button:hover{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justifify-content: center;
+  justify-content: center;
 }
 
 
@@ -320,6 +324,308 @@ button:hover{
   cursor: pointer;
   color: #00d0ff;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ________________________________LAYOUT ADAPTATIVE________________________________ */
+
+
+@media (max-width: 450px) {
+
+
+  /* ______________________CONTAINER PAGE 1______________________ */
+
+  body{
+    overflow: auto;
+    height: auto;
+  }
+
+  main > #containerPage1{
+    height: auto;
+    padding: 0;
+    padding-top: 80px;
+    align-items: start;
+    gap: 0;
+  }
+
+
+  #containerPage1 > :nth-child(1),
+  #containerPage1 > :nth-child(2)
+  {
+    width: 45%;
+    padding: 10px;
+  }
+
+
+
+  #containerPage1 > :nth-child(1) > h2,
+  #containerPage1 > :nth-child(2) > h2
+  {
+    font-size: 25px;
+  }
+
+
+
+  button{
+    width: 90%;
+    font-size: 15px;
+  }
+
+
+
+
+
+
+  /* ______________________CONTAINER PAGE 2______________________ */
+
+  #containerPage2{
+    gap: 30px;
+    padding: 10px;
+    width: 100%;
+  }
+
+
+  #containerPage2 > span{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 16px;
+  }
+
+
+  #containerPage2 > h1{
+    top: 60px;
+    font-size: 30px;
+    position: absolute;
+  }
+
+
+
+  #containerPage2 > div{
+    width: 45%;
+    gap: 20px;
+  }
+
+
+  #containerPage2 > div > div > h2{
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+
+  #containerPage2 > div > div{
+
+  }
+
+
+  #containerPage2 > div > div > h3{
+    font-size: 16px;
+  }
+
+
+
+  #containerPage2 > div > div > span{
+    font-size: 17px;
+  }
+
+
+
+
+
+
+  /* ______________________ALERT COPY______________________ */
+
+  #containerPage2 > #alertCopy{
+    font-size: 16px;
+  }
+
+
+
+
+  /* ______________________BUTTON BACK______________________ */
+
+
+#containerPage2 #buttonBack{
+  bottom: 20px;
+  left: 20px;
+  font-size: 40px;
+}
+
+
+
+
+
+/* ______________________ARROW CONTAINER PROMOTIONS FOR MORE MONTHS______________________ */
+
+
+#containerPage2 > #arrowContainerPromotionForMoreMonths{
+  display: none;
+}
+
+
+#arrowUpContainerPromotionForMoreMonths{
+  display: none;
+}
+
+
+
+
+/* ______________________ARROW CONTAINER PROMOTIONS FOR MORE MONTHS -- RESPONSIVE______________________ */
+
+#containerPage2 > #arrowDownContainerPromotionForMoreMonthsResponsive{
+  position: absolute;
+  display: inline-block;
+  bottom: 15px;
+  top: auto;
+  bottom: 25px;
+  font-size: 40px;
+}
+
+
+
+
+
+/* ______________________CONTAINER PROMOTIONS FOR MORE MONTHS______________________ */
+
+#containerPage2 > #containerPromotionForMoreMonths{
+  transform: translateY(150vh);
+  width: 100%;
+  height: auto;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+
+
+
+#containerPage2 > #containerPromotionForMoreMonths > :nth-child(2){
+  border-bottom: 3px solid #fff;
+}
+
+
+#containerPage2 > #containerPromotionForMoreMonths > div {
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+#containerPage2 > #containerPromotionForMoreMonths > div > div{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px;
+}
+
+
+
+#containerPage2 > #containerPromotionForMoreMonths > div > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+
+#containerPage2 > #containerPromotionForMoreMonths > div > div > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+#containerPage2 > #containerPromotionForMoreMonths > div > div > h2{
+  font-size: 18px;
+}
+
+
+#containerPage2 > #containerPromotionForMoreMonths > div > h2{
+  font-size: 25px;
+}
+
+#containerPage2 > #containerPromotionForMoreMonths > div > div > div > span{
+  font-size: 18px;
+}
+
+
+#containerPage2 > #containerPromotionForMoreMonths > div > div > div > h2{
+  font-size: 18px;
+}
+
+
+
+}
+
+
+
 
 
 
