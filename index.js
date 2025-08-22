@@ -141,9 +141,9 @@ const pricesProfiles = [
   {
     serviceName: "Crunchyroll",
     priceBcvForClient: 3,
-    priceBcvForReseller: 2.5,
+    priceBcvForReseller: 2,
     priceCurrenciesForClient: 2.5,
-    priceCurrenciesForReseller: 2,
+    priceCurrenciesForReseller: 1.5,
     promotionForMoreMonths: false
   },
 
@@ -899,5 +899,6 @@ async function createDinamicHtmlPage2(object) {
   const containerBcv = document.createElement("span");
   containerBcv.textContent = `Tasa BCV | Bs. ${BcvPrice}`;
   containerPage2.appendChild(containerBcv);
+
 
 }
