@@ -406,7 +406,7 @@ const pricesAccounts = [
 
       reseller: {
         bcv: {
-          _3Months: 8,
+          _3Months: null,
           _6Months: null,
           _12Months: null
         },
@@ -902,4 +902,5 @@ async function createDinamicHtmlPage2(object) {
 
 
 }
+
 
