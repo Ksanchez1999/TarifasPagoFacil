@@ -412,7 +412,7 @@ const pricesAccounts = [
         },
 
         currencies: {
-          _3Months: 6,
+          _3Months: null,
           _6Months: null,
           _12Months: null
         }
@@ -902,5 +902,6 @@ async function createDinamicHtmlPage2(object) {
 
 
 }
+
 
 
