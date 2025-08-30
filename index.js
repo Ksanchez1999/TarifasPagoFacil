@@ -33,7 +33,7 @@ const pricesProfiles = [
   {
     serviceName: "Netflix ME",
     priceBcvForClient: 6,
-    priceBcvForReseller: null,
+    priceBcvForReseller: 6.5,
     priceCurrenciesForClient: 6,
     priceCurrenciesForReseller: 5,
     promotionForMoreMonths: false
@@ -44,7 +44,7 @@ const pricesProfiles = [
   {
     serviceName: "Disney estándar",
     priceBcvForClient: 3.5,
-    priceBcvForReseller: 2.5,
+    priceBcvForReseller: 2,
     priceCurrenciesForClient: 3,
     priceCurrenciesForReseller: 2,
     promotionForMoreMonths: false
@@ -276,7 +276,7 @@ const pricesProfiles = [
 
 
 
-// _________________________PROFILES_________________________
+// _________________________ACCOUNTS_________________________
 
 const pricesAccounts = [
 
@@ -370,8 +370,8 @@ const pricesAccounts = [
 
   {
     serviceName: "Youtube Premium",
-    priceBcvForClient: null,
-    priceBcvForReseller: null,
+    priceBcvForClient: 5,
+    priceBcvForReseller: 3.5,
     priceCurrenciesForClient: null,
     priceCurrenciesForReseller: null,
     promotionForMoreMonths: false
@@ -382,7 +382,7 @@ const pricesAccounts = [
   {
     serviceName: "AppleTv",
     priceBcvForClient: null,
-    priceBcvForReseller: null,
+    priceBcvForReseller: 3.5,
     priceCurrenciesForClient: null,
     priceCurrenciesForReseller: null,
     promotionForMoreMonths: true,
@@ -902,3 +902,4 @@ async function createDinamicHtmlPage2(object) {
 
 
 }
+
