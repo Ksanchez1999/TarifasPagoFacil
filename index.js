@@ -21,7 +21,7 @@ const pricesProfiles = [
 
   {
     serviceName: "Netflix",
-    priceBcvForClient: 4.5,
+    priceBcvForClient: 5,
     priceBcvForReseller: 4,
     priceCurrenciesForClient: 3.5,
     priceCurrenciesForReseller: 3,
@@ -32,7 +32,7 @@ const pricesProfiles = [
 
   {
     serviceName: "Netflix ME",
-    priceBcvForClient: 6,
+    priceBcvForClient: 8.5,
     priceBcvForReseller: 6.5,
     priceCurrenciesForClient: 6,
     priceCurrenciesForReseller: 5,
@@ -259,7 +259,7 @@ const pricesProfiles = [
 
   {
     serviceName: "CapCut",
-    priceBcvForClient: 6,
+    priceBcvForClient: 7,
     priceBcvForReseller: 5,
     priceCurrenciesForClient: null,
     priceCurrenciesForReseller: null,
@@ -359,7 +359,7 @@ const pricesAccounts = [
 
   {
     serviceName: "FlujoTv",
-    priceBcvForClient: null,
+    priceBcvForClient: 10,
     priceBcvForReseller: 5.5,
     priceCurrenciesForClient: null,
     priceCurrenciesForReseller: 4,
@@ -381,7 +381,7 @@ const pricesAccounts = [
 
   {
     serviceName: "AppleTv",
-    priceBcvForClient: null,
+    priceBcvForClient: 4.5,
     priceBcvForReseller: 3.5,
     priceCurrenciesForClient: null,
     priceCurrenciesForReseller: null,
@@ -902,6 +902,7 @@ async function createDinamicHtmlPage2(object) {
 
 
 }
+
 
 
 
