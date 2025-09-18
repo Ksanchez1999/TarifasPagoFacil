@@ -205,9 +205,9 @@ const pricesProfiles = [
   {
     serviceName: "Kaelus",
     priceBcvForClient: 4.5,
-    priceBcvForReseller: null,
-    priceCurrenciesForClient: null,
-    priceCurrenciesForReseller: null,
+    priceBcvForReseller: 4.5,
+    priceCurrenciesForClient: 4.5,
+    priceCurrenciesForReseller: 4.5,
     promotionForMoreMonths: false
   },
 
@@ -261,8 +261,8 @@ const pricesProfiles = [
     serviceName: "CapCut",
     priceBcvForClient: 7,
     priceBcvForReseller: 5,
-    priceCurrenciesForClient: null,
-    priceCurrenciesForReseller: null,
+    priceCurrenciesForClient: 7,
+    priceCurrenciesForReseller: 5,
     promotionForMoreMonths: false
   }
 ]
@@ -902,6 +902,7 @@ async function createDinamicHtmlPage2(object) {
 
 
 }
+
 
 
 
