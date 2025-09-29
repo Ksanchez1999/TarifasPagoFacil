@@ -284,13 +284,13 @@ const pricesProfiles = [
 
       reseller: {
         bcv: {
-          _3Months: null,
+          _3Months: 12,
           _6Months: null,
           _12Months: null
         },
 
         currencies: {
-          _3Months: null,
+          _3Months: 12,
           _6Months: null,
           _12Months: null
         }
@@ -935,6 +935,7 @@ async function createDinamicHtmlPage2(object) {
 
 
 }
+
 
 
 
