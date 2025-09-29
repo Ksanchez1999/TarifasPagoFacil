@@ -263,8 +263,41 @@ const pricesProfiles = [
     priceBcvForReseller: 5,
     priceCurrenciesForClient: 7,
     priceCurrenciesForReseller: 5,
-    promotionForMoreMonths: false
+    promotionForMoreMonths: true,
+
+    moreMonthsData: {
+
+      client: {
+        bcv: {
+          _3Months: 16,
+          _6Months: null,
+          _12Months: null
+        },
+
+        currencies: {
+          _3Months: 16,
+          _6Months: null,
+          _12Months: null
+        }
+      },
+
+
+      reseller: {
+        bcv: {
+          _3Months: null,
+          _6Months: null,
+          _12Months: null
+        },
+
+        currencies: {
+          _3Months: null,
+          _6Months: null,
+          _12Months: null
+        }
+      }
+    }
   }
+  
 ]
 
 
@@ -424,9 +457,9 @@ const pricesAccounts = [
 
   {
     serviceName: "Telelatino",
-    priceBcvForClient: null,
+    priceBcvForClient: 7,
     priceBcvForReseller: 6,
-    priceCurrenciesForClient: null,
+    priceCurrenciesForClient: 7,
     priceCurrenciesForReseller: 4.5,
     promotionForMoreMonths: false
   }
@@ -902,6 +935,7 @@ async function createDinamicHtmlPage2(object) {
 
 
 }
+
 
 
 
