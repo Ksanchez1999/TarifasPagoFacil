@@ -172,7 +172,7 @@ const pricesProfiles = [
       client: {
         bcv: {
           _3Months: 12,
-          _6Months: 15,
+          _6Months: 16,
           _12Months: 40
         },
 
@@ -935,6 +935,7 @@ async function createDinamicHtmlPage2(object) {
 
 
 }
+
 
 
 
