@@ -165,7 +165,7 @@ const pricesProfiles = [
     priceBcvForClient: 5,
     priceBcvForReseller: 3.5,
     priceCurrenciesForClient: 5,
-    priceCurrenciesForReseller: 3,
+    priceCurrenciesForReseller: 2.5,
     promotionForMoreMonths: true,
     moreMonthsData: {
 
@@ -192,9 +192,9 @@ const pricesProfiles = [
         },
 
         currencies: {
-          _3Months: null,
-          _6Months: null,
-          _12Months: null
+          _3Months: 6,
+          _6Months: 9,
+          _12Months: 16
         }
       }
     }
@@ -935,6 +935,7 @@ async function createDinamicHtmlPage2(object) {
 
 
 }
+
 
 
 
