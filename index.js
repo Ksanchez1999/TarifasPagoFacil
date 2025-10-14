@@ -32,8 +32,8 @@ const pricesProfiles = [
 
   {
     serviceName: "Netflix ME",
-    priceBcvForClient: 8.5,
-    priceBcvForReseller: 6.5,
+    priceBcvForClient: 10,
+    priceBcvForReseller: 7,
     priceCurrenciesForClient: 6,
     priceCurrenciesForReseller: 5,
     promotionForMoreMonths: false
@@ -163,7 +163,7 @@ const pricesProfiles = [
   {
     serviceName: "Spotify",
     priceBcvForClient: 5,
-    priceBcvForReseller: 3,
+    priceBcvForReseller: 3.5,
     priceCurrenciesForClient: 5,
     priceCurrenciesForReseller: 3,
     promotionForMoreMonths: true,
@@ -171,9 +171,9 @@ const pricesProfiles = [
 
       client: {
         bcv: {
-          _3Months: 9,
+          _3Months: 12,
           _6Months: 15,
-          _12Months: 24
+          _12Months: 40
         },
 
         currencies: {
@@ -186,9 +186,9 @@ const pricesProfiles = [
 
       reseller: {
         bcv: {
-          _3Months: 6,
-          _6Months: 10,
-          _12Months: 18
+          _3Months: 7,
+          _6Months: 12,
+          _12Months: 24
         },
 
         currencies: {
@@ -935,6 +935,7 @@ async function createDinamicHtmlPage2(object) {
 
 
 }
+
 
 
 
